@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practice Apple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    
+<!-- <header>
+    <div class="container">
+        <nav>
+            <h2  class="brand" href="index.html"><img src="/apple_logo_PNG19673.png" alt="Logo"></h2>
+            <ul class="nav-links">
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+
+
+<nav>
+    <div class="menu">
+        <ul>
+            <li><a href=""><i class="fa fa-apple"></i></a></li>
+            <li><a href="#" class="menu-item">Mac</a></li>
+            <li><a href="#" class="menu-item">iPad</a></li>
+            <li><a href="#" class="menu-item">iPhone</a></li>
+            <li><a href="#" class="menu-item">Watch</a></li>
+            <li><a href="#" class="menu-item">TV</a></li>
+            <li><a href="#" class="menu-item">Music</a></li>
+            <li><a href="#" class="menu-item">Support</a></li>
+            <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+            <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
+        </ul>
+        <div class="search-form">
+            <form>
+            <input type="text" placeholder="Search">
+            </form> 
+        </div>
+        <a class="close"><i class="fa fa-times"></i></a>
+    </div>
+</nav>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+         $('#search').click(function(){
+             $('.menu-item').addClass('hide-item')
+             $('.search-form').addClass('active')
+             $('.close').addClass('active')
+             $('#search').hide()
+         })
+         $('.close').click(function(){
+             $('.menu-item').removeClass('hide-item')
+             $('.search-form').removeClass('active')
+             $('.close').removeClass('active')
+             $('#search').show()
+         })
+     })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
